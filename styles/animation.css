@@ -5,6 +5,18 @@
     transition: 0.5s;
 }
 
+.image {
+    animation: imgZoom 2.5s ease infinite;
+    animation-direction: reverse;
+    animation-fill-mode: none;
+}
+
+@keyframes imgZoom {
+	from {transform: scale(1) rotate(0deg);}
+	to {transform: scale(1.1) rotate(15deg);}
+}
+
+
 .headline {
     font-family: "Open Sans", sans-serif;
     color: rgba(255, 255, 255, 0.75);
